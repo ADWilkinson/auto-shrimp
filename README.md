@@ -66,7 +66,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 
 ## Support
 1. Join the Official Shrimpy [Discord](https://discord.gg/92gM5cd) server
-2. My username is Falco#6843, please either tag me on there or direct message me.
+2. My username is **Falco#6843**, please either tag me on there or direct message me.
 
 
 
