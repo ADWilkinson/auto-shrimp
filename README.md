@@ -52,7 +52,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 }
 ```
 
-## TradingView alert 
+## TradingView Alerts 
 
 1. Open the create alert window on TradingView
 2. Define your paramaters to trigger a portfolio switch and rebalance, e.g. a Moving Average cross over or price level cross
