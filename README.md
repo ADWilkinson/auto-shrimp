@@ -19,6 +19,54 @@ To use AutoShrimp, there are a few dead simple steps to follow.
 
 AutoShrimp is a node express based weberver that needs to run 24/7 to be able to recieve your alerts and react to it. Therefore it is advised to run this either on a small machine like ethernet connected Raspberry Pi at home or ideally a cheap cloud VPS.
 
+## Setup
+
+1. Open up the `config.json` file
+2. Fill the following fields in with the relevant Shrimpy account details and your chosen exchange
+```
+{
+    "key": "xxx",
+    "secret": "xxx",
+    "exchange": "BINANCE"
+}
+```
+3. Execute the `AutoShrimp-{platform}` file by opening Command Prompt/Terminal in the AutoShrimp directory and typing `AutoShrimp-win.exe` for windows, `./AutoShrimp-macos` for Mac & `./AutoShrimp-linux` for linux.
+4. On a successful start up and connection with your Shrimpy account you should see the following log lines in the terminal:
+```
+[2020-03-03T16:44:23.671] [DEBUG] debug - AutoShrimp started on port 8080
+[2020-03-03T16:44:24.267] [DEBUG] debug - Setting up AutoShrimp
+[2020-03-03T16:44:24.268] [DEBUG] debug - Writing to account.json
+[2020-03-03T16:44:24.277] [INFO] debug - Account information stored in account.json
+```
+5. The webserver is now running on port 8080, this port must now be forwarded on your router or VPS, this process varies on provider/router type so please research appropiate documentation online.
+6. To check for a successful setup, find your [IP address](https://whatismyipaddress.com), and paste that into your internet browser with :8080 appended to the end e.g. 77.102.54.171:8080 . If your server is successfully exposed to the internet and ready for TradingView webhook alerts you should get a response that looks like this:
+
+```
+{
+    "STATUS": "ONLINE",
+    "ACCOUNT": {
+        "id": 123456,
+        "exchange": "Binance",
+        "isRebalancing": false
+    }
+}
+```
+
+## TradingView alert 
+
+1. Open the create alert window on TradingView
+2. Define your paramaters to trigger a portfolio switch and rebalance, e.g. a Moving Average cross over or price level cross
+3. Check the **Webhook URL** box and input your webserver address, port and 'alert' appended on the end, this is the URL that recieves your webhook alerts and actions them. e.g. `http://77.102.54.171:8080/alert`
+4. In the message box you **must** format your message like the example below. Please replace `TARGET_PORTFOLIO` with the desired portfolio on Shrimpy you want the alert to switch and rebalance too in resposne.
+
+```
+{ "portfolio": "TARGET_PORTFOLIO" }
+```
+5. You're all done! Thank you for using AutoShrimp!
+
+## Support
+1. Join the Official Shrimpy [Discord](https://discord.gg/92gM5cd) server
+2. My username is Falco#6843, please either tag me on there or direct message me.
 
 
 
