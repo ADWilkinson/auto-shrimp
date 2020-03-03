@@ -15,9 +15,11 @@ To use AutoShrimp, there are a few dead simple steps to follow.
 5. First create an API key on your Shrimpy account page.
 6. Take record of your *public* and *secret* key that are generated for you
 7. Download the latest release of AutoShrimp from the repository [releases page](https://github.com/ADWilkinson/auto-shrimp/releases)
-8. Unzip the AutoShrimp .zip file
+8. Unzip the AutoShrimp.zip file
 
 AutoShrimp is a node express based weberver that needs to run 24/7 to be able to recieve your alerts and react to it. Therefore it is advised to run this either on a small machine like ethernet connected Raspberry Pi at home or ideally a cheap cloud VPS.
+
+
 
 
 
