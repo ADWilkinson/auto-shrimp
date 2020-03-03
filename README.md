@@ -68,6 +68,8 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 1. Join the Official Shrimpy [Discord](https://discord.gg/92gM5cd) server
 2. My username is **Falco#6843**, please either tag me on there or direct message me.
 
-
-
+## Donate
+Feel free to buy me a coffee if you find this useful to you, it goes without saying that it's massively appreciated.
+- **[PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FVGFAM7EP3YUA&source=url)**
+- **[Coinbase](https://commerce.coinbase.com/checkout/3cefad58-560f-4588-a156-331047429f2b)**
 
