@@ -57,7 +57,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 1. Open the create alert window on TradingView
 2. Define your paramaters to trigger a portfolio switch and rebalance, e.g. a Moving Average cross over or price level cross
 3. Check the **Webhook URL** box and input your webserver address, port and 'alert' appended on the end, this is the URL that recieves your webhook alerts and actions them. e.g. `http://77.102.54.171:8080/alert`
-4. In the message box you **must** format your message like the example below. Please replace `TARGET_PORTFOLIO` with the desired portfolio on Shrimpy you want the alert to switch and rebalance too in resposne.
+4. In the message box you **must** format your message like the example below. Please replace `TARGET_PORTFOLIO` with the desired portfolio on Shrimpy you want the alert to switch and rebalance too in response.
 
 ```
 { "portfolio": "TARGET_PORTFOLIO" }
