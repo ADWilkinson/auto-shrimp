@@ -60,7 +60,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 4. In the message box you **must** format your message like the example below. Please replace `TARGET_PORTFOLIO` with the desired portfolio on Shrimpy you want the alert to switch and rebalance too in response.
 
 ```
-{ "portfolio": "TARGET_PORTFOLIO" }
+TARGET_PORTFOLIO_TEXT
 ```
 5. You're all done! Thank you for using AutoShrimp!
 
