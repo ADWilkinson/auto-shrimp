@@ -39,7 +39,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 [2020-03-03T16:44:24.277] [INFO] debug - Account information stored in account.json
 ```
 5. The webserver is now running on **port 80**, this port must now be forwarded on your router or VPS on port 80, this process varies on provider/router type so please research appropiate documentation online.
-6. To check for a successful setup, find your [IP address](https://whatismyipaddress.com), and paste that into your internet browser with :80 port number appended to the end e.g. 77.102.54.171:80 . If your server is successfully exposed to the internet and ready for TradingView webhook alerts you should get a response that looks like this:
+6. To check for a successful setup, find your [IP address](https://whatismyipaddress.com), and paste that into your internet browser with :80 port number appended to the end e.g. 203.0.113.10:80 . If your server is successfully exposed to the internet and ready for TradingView webhook alerts you should get a response that looks like this:
 
 ```
 {
@@ -56,7 +56,7 @@ AutoShrimp is a node express based weberver that needs to run 24/7 to be able to
 
 1. Open the create alert window on TradingView
 2. Define your paramaters to trigger a portfolio switch and rebalance, e.g. a Moving Average cross over or price level cross
-3. Check the **Webhook URL** box and input your webserver address, port and 'alert' appended on the end, this is the URL that recieves your webhook alerts and actions them. e.g. `http://77.102.54.171:80/alert`
+3. Check the **Webhook URL** box and input your webserver address, port and 'alert' appended on the end, this is the URL that recieves your webhook alerts and actions them. e.g. `http://203.0.113.10:80/alert`
 4. In the message box you **must** format your message like the example below. Please replace `TARGET_PORTFOLIO_TEXT` with the desired portfolio on Shrimpy you want the alert to switch and rebalance too in response.
 
 ```
